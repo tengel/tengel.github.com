@@ -6,42 +6,70 @@
 
 <h1>Java ME Maps</h1>
 
-<ul>
-<li>
-<a href="http://sites.google.com/site/tdhutt/mobile-street-map">
-Tim Hutt's mobile map viewer and maps for London and  Birmingham.
-</a>
-</li>
+<img src="img/emulator.png" align="right" alt="Mobile Street Map application showing a map of Berlin"/>
 
-<li>
-<a href="https://gist.github.com/426114">getmap.pl</a> for creating map images from
-<a href="http://www.openstreetmap.org/">OpenStreetMap</a>.
-</li>
+This is <a href="http://www.openstreetmap.org/">OpenStreetMap</a> for Java ME compatible mobile phones. The application was originally created by Tim Hutt. See the <a href="http://sites.google.com/site/tdhutt/mobile-street-map">Mobile Street Map hompage from Tim Hutt</a> for more details. The map viewer is an offline viewer, though no Internet connection is neccessary for viewing maps. The viewer contains a street index and has two zoom levels.<br>
+I adpoted the toolchain to create arbitrary maps from OpenStreetMap data which can be viewed with the Mobile Steet Map application.
 
-<li>
-<a href="https://github.com/tengel/MobileMaps">Sourcecode of all tools used for creating and viewing maps.</a>
-</li>
 
-<li>
-Map of Berlin: <a href="files/Berlin.mapth">Berlin.mapth</a><br>
-Image used to create map: <a href="img/berlin_small.png">berlin_small.png (30M)</a>
-</li>
+<h2>Java ME Application</h2>
+The Java ME application (midlet) is a general map viewer. When the application is started, it asks the user to select a map file. <br>
 
-<li>
-Berlin map in j2me emulator:<br>
-<img src="img/emulator.png"/>
-</li>
-
-<li>
-contact: timo-e &auml;t freenet dot de
-</ul>
+Download of the application from the <a href="http://sites.google.com/site/tdhutt/mobile-street-map">Mobile Street Map hompage from Tim Hutt</a>.
 
 
 
+<h2>Maps</h2>
+A map file has the extension .mapth. It contains an overview and a detail map as well as a street index. The data of the maps are originated from OpenStreetMap.
+
+<table border="1">
+<tr>
+  <th>Name</th>
+  <th>area on OSM</th>
+  <th>link to map file</th>
+  <th>detail</th>
+  <th>overview</th>
+  <th>area</th>
+</tr>
+
+<tr>
+  <td>Berlin</td>
+  <td><a href="http://www.openstreetmap.org/?minlon=13.223&minlat=52.414&maxlon=13.586&maxlat=52.598&box=yes">view area</a></td>
+  <td><a href="files/berlin.mapth">berlin.mapth (81M)</a></td>
+  <td>16</td>
+  <td>14</td>
+  <td>W=13.223; N=52.598; E=13.586; S=52.414
+</td>
+</tr>
+
+<tr>
+  <td>Berlin_small</td>
+  <td><a href="http://www.openstreetmap.org/?minlon=13.2793&minlat=52.461&maxlon=13.488&maxlat=52.5515&box=yes">view area</a></td>
+  <td><a href="files/berlin_small.mapth">berlin_small.mapth (28M)</td>
+  <td>16</td>
+  <td>14</td>
+  <td>W=13.2793; N=52.5515; E=13.488; S=52.461</td>
+</tr>
+
+<tr>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+</table>
 
 
+<h2>Creating Maps</h2>
+In the <a href="https://github.com/tengel/MobileMaps">Git repository</a> you'll find the tools to create a .mapth file.<br>
+This needs still some documentation. Contact me if you would like to create your own maps.
 
 
+<h2>Contact</h2>
+timo-e &auml;t freenet dot de
 
 
 
