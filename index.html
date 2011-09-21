@@ -1,10 +1,10 @@
 <html>
 <head>
-<title>tengel.github.com</title>
+<title>MobileMap - J2ME OSM Offline Map</title>
 </head>
 <body>
 
-<h1>Java ME Maps</h1>
+<h1>OpenStreetMap Offline Viewer For Java ME Phones</h1>
 
 <img src="img/emulator.png" align="right" alt="Mobile Street Map application showing a map of Berlin"/>
 
@@ -64,14 +64,24 @@ A map file has the extension .mapth. It contains an overview and a detail map as
 
 
 <h2>Creating Maps</h2>
-In the <a href="https://github.com/tengel/MobileMaps">Git repository</a> you'll find the tools to create a .mapth file.<br>
-This needs still some documentation. Contact me if you would like to create your own maps.
+In the <a href="https://github.com/tengel/MobileMaps">Git repository</a> you'll
+find the tools to create a .mapth file. Just run<br>
+<pre>./createmap.sh WEST NORTH EAST SOUTH ZOOM1 ZOOM2 [NAME]</pre>
+Where WEST, NORTH, SOUTH are the geographical coordinates of the desired area of
+the map and ZOOM1 and ZOOM2 are the OSM zoom levels of the overview and of the
+detailed map. NAME is optional and the name of the resulting file. To find out
+the coordinates and zoom levels you can for example use the export function of
+the <a href="http://www.openstreetmap.org/">OpenStreetMap website.</a><br>
+Download the resulting .mapth file to the phone and select the new file using
+Options-&gt;Select Map. 
 
 
 <h2>Contact</h2>
 timo-e &auml;t freenet dot de
 
 
+<br><br><hr>
+2011-09-21
 
 </body>
 </html>
